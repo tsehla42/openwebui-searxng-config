@@ -6,7 +6,7 @@ services:
     ports:
       - "3000:8080"
     volumes:
-      - open-webui:/app/backend/data
+      - openwebui-searxng-docker_open-webui:/app/backend/data
     env_file:
       - .env
     environment:
@@ -43,5 +43,5 @@ services:
         max-file: "1"
 
 volumes:
-  open-webui:
+  openwebui-searxng-docker_open-webui:
     external: true
